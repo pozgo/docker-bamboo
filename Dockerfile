@@ -13,8 +13,8 @@ RUN \
     yum clean all && \
     go get github.com/tools/godep && \
     go get -t github.com/smartystreets/goconvey && \
-    /opt/go/bin/godep restore &&
+    /opt/go/bin/godep restore && \
     go build && \
-    ln -s /opt/go/src/github.com/QubitProducts/bamboo /var/bamboo &&
+    ln -s /opt/go/src/github.com/QubitProducts/bamboo /var/bamboo
 
 EXPOSE 80 8000
